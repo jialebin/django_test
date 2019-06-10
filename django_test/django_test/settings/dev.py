@@ -159,3 +159,67 @@ JWT_AUTH = {
     # 自定义token返回字段
     'JWT_RESPONSE_PAYLOAD_HANDLER': 'users.utils.jwt_response_payload_handler',
 }
+
+LOGGING = {
+    'version': 1,
+    'disable_existing_loggers': False,
+    'formatters': {
+        'verbose': {
+                    'format': '{levelname} {asctime} {module} {process:d} {thread:d} {message}',
+                    'style': '{',
+                },
+        'simple': {
+            'format': '{levelname} {message}',
+            'style': '{',
+        },
+    },
+    'filters': {
+            # 'special': {
+            #     '()': 'project.logging.SpecialFilter',
+            #     'foo': 'bar',
+            # },
+            'require_debug_true': {
+                '()': 'django.utils.log.RequireDebugTrue',
+            },
+        },
+    'handlers': {
+        'console': {
+            'level': 'INFO',
+            'filters': ['require_debug_true'],
+            'class': 'logging.StreamHandler',
+            'formatter': 'simple'
+        },
+        # 'mail_admins': {
+        #     'level': 'ERROR',
+        #     'class': 'django.utils.log.AdminEmailHandler',
+        #     'filters': ['special']
+        # },
+        'file': {  # 向文件中输出日志
+                    'level': 'INFO',
+                    'class': 'logging.handlers.RotatingFileHandler',
+                    'filename': os.path.join(os.path.dirname(BASE_DIR), "logs/log.log"),  # 日志文件的位置
+                    'maxBytes': 300 * 1024 * 1024,  # 300M
+                    'backupCount': 10,
+                    'formatter': 'verbose'
+                },
+    },
+    'loggers': {
+        'django': {
+            'handlers': ['console', 'file'],
+            'propagate': True,
+            'level': 'INFO',
+            'filters': ['require_debug_true'],
+
+        },
+        # 'django.request': {
+        #     'handlers': ['mail_admins'],
+        #     'level': 'ERROR',
+        #     'propagate': True,
+        # },
+        # 'myproject.custom': {
+        #     'handlers': ['console', 'mail_admins'],
+        #     'level': 'INFO',
+        #     'filters': ['special']
+        # }
+    }
+}
