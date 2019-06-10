@@ -1,4 +1,0 @@
-INFO 2019-06-10 15:50:39,170 autoreload 26331 139939666044736 Watching for file changes with StatReloader
-INFO 2019-06-10 15:52:27,511 autoreload 26331 139939666044736 /home/jialebin/python/django2_test/django_test/django_test/settings/dev.py changed, reloading.
-INFO 2019-06-10 15:53:37,230 autoreload 26621 140244422481728 Watching for file changes with StatReloader
-INFO 2019-06-10 15:53:39,388 autoreload 26640 140184714860352 Watching for file changes with StatReloader

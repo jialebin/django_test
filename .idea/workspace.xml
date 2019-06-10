@@ -2,11 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="1b1722f0-9231-40e3-aa9b-c6b229f419bc" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/django_test/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/django_test/logs/.gitkeep" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/django_test/logs/log.log" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/django_test/django_test/settings/dev.py" beforeDir="false" afterPath="$PROJECT_DIR$/django_test/django_test/settings/dev.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/django_test/logs/log.log" beforeDir="false" afterPath="$PROJECT_DIR$/django_test/logs/log.log" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -19,35 +16,12 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/django_test/django_test/settings/dev.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="342">
+            <state relative-caret-position="5103">
               <caret line="210" column="45" selection-start-line="210" selection-start-column="45" selection-end-line="210" selection-end-column="45" />
               <folding>
                 <element signature="e#0#310#1" />
-                <element signature="e#539#601#0" />
-                <element signature="e#970#1237#0" />
-                <element signature="e#1187#1586#0" />
-                <element signature="e#1635#2106#0" />
-                <element signature="e#1641#2103#0" />
-                <element signature="e#1778#2096#0" />
-                <element signature="e#1814#2085#0" />
-                <element signature="e#2160#2170#0" />
-                <element signature="e#2401#2610#0" />
-                <element signature="e#2418#2608#0" />
-                <element signature="e#2613#2634#0" />
-                <element signature="e#2742#3138#0" />
-                <element signature="e#2748#2847#0" />
-                <element signature="e#2853#2942#0" />
-                <element signature="e#2948#3038#0" />
-                <element signature="e#3044#3135#0" />
-                <element signature="e#3141#3163#0" />
-                <element signature="e#3275#3300#0" />
-                <element signature="e#3373#3413#0" />
-                <element signature="e#3621#3871#0" />
-                <element signature="e#3671#3858#0" />
-                <element signature="e#3885#4061#0" />
                 <element signature="e#4465#4479#0" />
                 <element signature="e#4921#4939#0" />
-                <element signature="e#5683#5704#0" />
               </folding>
             </state>
           </provider>
@@ -56,8 +30,17 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/django_test/logs/log.log">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="108">
-              <caret line="4" lean-forward="true" selection-start-line="4" selection-end-line="4" />
+            <state relative-caret-position="81">
+              <caret line="3" lean-forward="true" selection-start-line="3" selection-end-line="3" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/.gitignore">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="162">
+              <caret line="6" column="18" selection-start-line="6" selection-start-column="18" selection-end-line="6" selection-end-column="18" />
             </state>
           </provider>
         </entry>
@@ -70,7 +53,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/django_test/django_test/apps/users/views.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="324">
+            <state relative-caret-position="81">
               <caret line="12" column="19" selection-start-line="12" selection-start-column="19" selection-end-line="12" selection-end-column="19" />
               <folding>
                 <element signature="e#0#35#0" expanded="true" />
@@ -82,7 +65,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/django_test/django_test/apps/users/serializers.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="296">
+            <state relative-caret-position="513">
               <caret line="23" column="39" selection-start-line="23" selection-start-column="26" selection-end-line="23" selection-end-column="39" />
               <folding>
                 <element signature="e#0#38#0" expanded="true" />
@@ -94,7 +77,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$USER_HOME$/.virtualenvs/django2_test/lib/python3.6/site-packages/rest_framework/exceptions.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="171">
+            <state relative-caret-position="3618">
               <caret line="146" column="26" selection-start-line="146" selection-start-column="26" selection-end-line="146" selection-end-column="26" />
             </state>
           </provider>
@@ -103,7 +86,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$USER_HOME$/.virtualenvs/django2_test/lib/python3.6/site-packages/rest_framework/serializers.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="981">
+            <state relative-caret-position="11745">
               <caret line="492" selection-start-line="492" selection-end-line="492" />
             </state>
           </provider>
@@ -112,7 +95,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/django_test/django_test/apps/users/urls.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="135">
+            <state relative-caret-position="108">
               <caret line="5" column="25" selection-start-line="5" selection-start-column="25" selection-end-line="5" selection-end-column="25" />
               <folding>
                 <element signature="e#0#19#0" expanded="true" />
@@ -124,7 +107,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$USER_HOME$/.virtualenvs/django2_test/lib/python3.6/site-packages/django/urls/conf.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="108">
+            <state relative-caret-position="270">
               <caret line="59" column="44" selection-start-line="59" selection-start-column="33" selection-end-line="59" selection-end-column="44" />
               <folding>
                 <element signature="e#307#2190#0" />
@@ -162,6 +145,7 @@
       <find>project</find>
       <find>mail_admins</find>
       <find>filters</find>
+      <find>logs</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -182,6 +166,8 @@
         <option value="$PROJECT_DIR$/django_test/django_test/apps/users/urls.py" />
         <option value="$PROJECT_DIR$/django_test/django_test/apps/users/views.py" />
         <option value="$PROJECT_DIR$/django_test/django_test/settings/dev.py" />
+        <option value="$PROJECT_DIR$/.gitignore" />
+        <option value="$PROJECT_DIR$/django_test/logs/log.log" />
       </list>
     </option>
   </component>
@@ -208,6 +194,12 @@
               <item name="django2_test" type="b2602c69:ProjectViewProjectNode" />
               <item name="django2_test" type="462c0819:PsiDirectoryNode" />
               <item name="django_test" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="django2_test" type="b2602c69:ProjectViewProjectNode" />
+              <item name="django2_test" type="462c0819:PsiDirectoryNode" />
+              <item name="django_test" type="462c0819:PsiDirectoryNode" />
+              <item name="logs" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -285,18 +277,19 @@
       <updated>1559800251017</updated>
       <workItem from="1559800252244" duration="3602000" />
       <workItem from="1559809426021" duration="4467000" />
-      <workItem from="1560126425522" duration="15755000" />
+      <workItem from="1560126425522" duration="16774000" />
+      <workItem from="1560156257984" duration="923000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="23824000" />
+    <option name="totallyTimeSpent" value="25766000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="67" y="25" width="1853" height="1055" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.25652415" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.25985563" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -310,7 +303,7 @@
       <window_info anchor="bottom" id="Version Control" order="8" />
       <window_info anchor="bottom" id="Database Changes" order="9" />
       <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="11" visible="true" weight="0.33369923" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="11" visible="true" weight="0.3358946" />
       <window_info anchor="bottom" id="Python Console" order="12" weight="0.32930845" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -473,23 +466,76 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$USER_HOME$/.virtualenvs/django2_test/lib/python3.6/site-packages/rest_framework/serializers.py">
+    <entry file="file://$PROJECT_DIR$/django_test/.gitignore" />
+    <entry file="file://$PROJECT_DIR$/django_test/django_test/settings/dev.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="981">
-          <caret line="492" selection-start-line="492" selection-end-line="492" />
+        <state relative-caret-position="5103">
+          <caret line="210" column="45" selection-start-line="210" selection-start-column="45" selection-end-line="210" selection-end-column="45" />
+          <folding>
+            <element signature="e#0#310#1" />
+            <element signature="e#4465#4479#0" />
+            <element signature="e#4921#4939#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.gitignore">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="162">
+          <caret line="6" column="18" selection-start-line="6" selection-start-column="18" selection-end-line="6" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/django_test/logs/.gitkeep">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/django_test/django_test/apps/users/views.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="81">
+          <caret line="12" column="19" selection-start-line="12" selection-start-column="19" selection-end-line="12" selection-end-column="19" />
+          <folding>
+            <element signature="e#0#35#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/django_test/django_test/apps/users/serializers.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="513">
+          <caret line="23" column="39" selection-start-line="23" selection-start-column="26" selection-end-line="23" selection-end-column="39" />
+          <folding>
+            <element signature="e#0#38#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$USER_HOME$/.virtualenvs/django2_test/lib/python3.6/site-packages/rest_framework/exceptions.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="171">
+        <state relative-caret-position="3618">
           <caret line="146" column="26" selection-start-line="146" selection-start-column="26" selection-end-line="146" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/.virtualenvs/django2_test/lib/python3.6/site-packages/rest_framework/serializers.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="11745">
+          <caret line="492" selection-start-line="492" selection-end-line="492" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/django_test/django_test/apps/users/urls.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="108">
+          <caret line="5" column="25" selection-start-line="5" selection-start-column="25" selection-end-line="5" selection-end-column="25" />
+          <folding>
+            <element signature="e#0#19#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$USER_HOME$/.virtualenvs/django2_test/lib/python3.6/site-packages/django/urls/conf.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="108">
+        <state relative-caret-position="270">
           <caret line="59" column="44" selection-start-line="59" selection-start-column="33" selection-end-line="59" selection-end-column="44" />
           <folding>
             <element signature="e#307#2190#0" />
@@ -509,81 +555,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/django_test/django_test/apps/users/urls.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="5" column="25" selection-start-line="5" selection-start-column="25" selection-end-line="5" selection-end-column="25" />
-          <folding>
-            <element signature="e#0#19#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/django_test/django_test/apps/users/serializers.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="296">
-          <caret line="23" column="39" selection-start-line="23" selection-start-column="26" selection-end-line="23" selection-end-column="39" />
-          <folding>
-            <element signature="e#0#38#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/django_test/django_test/apps/users/views.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="324">
-          <caret line="12" column="19" selection-start-line="12" selection-start-column="19" selection-end-line="12" selection-end-column="19" />
-          <folding>
-            <element signature="e#0#35#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/django_test/logs/.gitkeep">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/django_test/django_test/settings/dev.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="342">
-          <caret line="210" column="45" selection-start-line="210" selection-start-column="45" selection-end-line="210" selection-end-column="45" />
-          <folding>
-            <element signature="e#0#310#1" />
-            <element signature="e#539#601#0" />
-            <element signature="e#970#1237#0" />
-            <element signature="e#1187#1586#0" />
-            <element signature="e#1635#2106#0" />
-            <element signature="e#1641#2103#0" />
-            <element signature="e#1778#2096#0" />
-            <element signature="e#1814#2085#0" />
-            <element signature="e#2160#2170#0" />
-            <element signature="e#2401#2610#0" />
-            <element signature="e#2418#2608#0" />
-            <element signature="e#2613#2634#0" />
-            <element signature="e#2742#3138#0" />
-            <element signature="e#2748#2847#0" />
-            <element signature="e#2853#2942#0" />
-            <element signature="e#2948#3038#0" />
-            <element signature="e#3044#3135#0" />
-            <element signature="e#3141#3163#0" />
-            <element signature="e#3275#3300#0" />
-            <element signature="e#3373#3413#0" />
-            <element signature="e#3621#3871#0" />
-            <element signature="e#3671#3858#0" />
-            <element signature="e#3885#4061#0" />
-            <element signature="e#4465#4479#0" />
-            <element signature="e#4921#4939#0" />
-            <element signature="e#5683#5704#0" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/django_test/.gitignore">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/django_test/logs/log.log">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="108">
-          <caret line="4" lean-forward="true" selection-start-line="4" selection-end-line="4" />
+        <state relative-caret-position="81">
+          <caret line="3" lean-forward="true" selection-start-line="3" selection-end-line="3" />
         </state>
       </provider>
     </entry>

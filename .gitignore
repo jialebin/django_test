@@ -4,7 +4,7 @@ __pycache__/
 *$py.class
 
 # logs
-django_test/logs/*
+logs/*
 
 # C extensions
 *.so
