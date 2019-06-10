@@ -144,18 +144,18 @@ STATIC_URL = '/static/'
 AUTH_USER_MODEL = 'users.User'
 
 # 添加认证
-# REST_FRAMEWORK = {
-#     'DEFAULT_AUTHENTICATION_CLASSES': (
-#         'rest_framework_jwt.authentication.JSONWebTokenAuthentication',
-#         'rest_framework.authentication.SessionAuthentication',
-#         'rest_framework.authentication.BasicAuthentication',
-#         ),
-# }
+REST_FRAMEWORK = {
+    'DEFAULT_AUTHENTICATION_CLASSES': (
+        'rest_framework_jwt.authentication.JSONWebTokenAuthentication',
+        'rest_framework.authentication.SessionAuthentication',
+        'rest_framework.authentication.BasicAuthentication',
+        ),
+}
 
 
-# JWT_AUTH = {
-#     # 指明token的有效期
-#     'JWT_EXPIRATION_DELTA': datetime.timedelta(days=1),
-#     # 自定义token返回字段
-#     'JWT_RESPONSE_PAYLOAD_HANDLER': 'users.utils.jwt_response_payload_handler',
-# }
+JWT_AUTH = {
+    # 指明token的有效期
+    'JWT_EXPIRATION_DELTA': datetime.timedelta(days=1),
+    # 自定义token返回字段
+    'JWT_RESPONSE_PAYLOAD_HANDLER': 'users.utils.jwt_response_payload_handler',
+}

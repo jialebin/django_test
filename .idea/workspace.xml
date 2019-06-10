@@ -2,8 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="1b1722f0-9231-40e3-aa9b-c6b229f419bc" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/django_test/django_test/apps/users/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/django_test/django_test/apps/users/urls.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/django_test/django_test/apps/users/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/django_test/django_test/apps/users/views.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/django_test/django_test/settings/dev.py" beforeDir="false" afterPath="$PROJECT_DIR$/django_test/django_test/settings/dev.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -16,8 +16,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/django_test/django_test/settings/dev.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="414">
-              <caret line="45" column="35" selection-start-line="45" selection-start-column="35" selection-end-line="45" selection-end-column="35" />
+            <state relative-caret-position="53">
+              <caret line="150" column="20" selection-start-line="150" selection-start-column="20" selection-end-line="150" selection-end-column="20" />
               <folding>
                 <element signature="e#0#310#1" />
                 <element signature="e#312#321#0" expanded="true" />
@@ -54,8 +54,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/django_test/django_test/apps/users/views.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="404">
-              <caret line="38" selection-start-line="38" selection-end-line="38" />
+            <state relative-caret-position="431">
+              <caret line="40" column="26" selection-start-line="40" selection-start-column="26" selection-end-line="40" selection-end-column="26" />
               <folding>
                 <element signature="e#0#35#0" expanded="true" />
               </folding>
@@ -105,8 +105,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/django_test/django_test/apps/users/urls.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="216">
-              <caret line="8" column="38" selection-start-line="8" selection-start-column="38" selection-end-line="8" selection-end-column="38" />
+            <state relative-caret-position="135">
+              <caret line="5" column="25" selection-start-line="5" selection-start-column="25" selection-end-line="5" selection-end-column="25" />
               <folding>
                 <element signature="e#0#19#0" expanded="true" />
               </folding>
@@ -180,9 +180,9 @@
         <option value="$PROJECT_DIR$/django_test/django_test/apps/users/contacts.py" />
         <option value="$PROJECT_DIR$/django_test/django_test/apps/users/utils.py" />
         <option value="$PROJECT_DIR$/django_test/django_test/apps/users/serializers.py" />
+        <option value="$PROJECT_DIR$/django_test/django_test/apps/users/urls.py" />
         <option value="$PROJECT_DIR$/django_test/django_test/settings/dev.py" />
         <option value="$PROJECT_DIR$/django_test/django_test/apps/users/views.py" />
-        <option value="$PROJECT_DIR$/django_test/django_test/apps/users/urls.py" />
       </list>
     </option>
   </component>
@@ -308,12 +308,12 @@
       <updated>1559800251017</updated>
       <workItem from="1559800252244" duration="3602000" />
       <workItem from="1559809426021" duration="4467000" />
-      <workItem from="1560126425522" duration="12595000" />
+      <workItem from="1560126425522" duration="13098000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="20664000" />
+    <option name="totallyTimeSpent" value="21167000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="67" y="25" width="1853" height="1055" extended-state="6" />
@@ -345,8 +345,19 @@
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
   </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <default-breakpoints>
+        <breakpoint type="python-exception">
+          <properties notifyOnTerminate="true" exception="BaseException">
+            <option name="notifyOnTerminate" value="true" />
+          </properties>
+        </breakpoint>
+      </default-breakpoints>
+    </breakpoint-manager>
+  </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
-    <SUITE FILE_PATH="coverage/django2_test$manage.coverage" NAME="manage Coverage Results" MODIFIED="1560150146559" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/django_test" />
+    <SUITE FILE_PATH="coverage/django2_test$manage.coverage" NAME="manage Coverage Results" MODIFIED="1560150929708" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/django_test" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/django_test/manage.py">
@@ -499,10 +510,52 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$USER_HOME$/.virtualenvs/django2_test/lib/python3.6/site-packages/django/urls/conf.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="108">
+          <caret line="59" column="44" selection-start-line="59" selection-start-column="33" selection-end-line="59" selection-end-column="44" />
+          <folding>
+            <element signature="e#307#2190#0" />
+            <element signature="e#362#983#0" />
+            <element signature="e#496#983#0" />
+            <element signature="e#526#694#0" />
+            <element signature="e#574#676#0" />
+            <element signature="e#751#958#0" />
+            <element signature="e#1002#1085#0" />
+            <element signature="e#1356#1660#0" />
+            <element signature="e#1396#1649#0" />
+            <element signature="e#1703#1771#0" />
+            <element signature="e#1853#2141#0" />
+            <element signature="e#1894#2141#0" />
+            <element signature="e#2015#2141#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/django_test/django_test/apps/users/urls.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="135">
+          <caret line="5" column="25" selection-start-line="5" selection-start-column="25" selection-end-line="5" selection-end-column="25" />
+          <folding>
+            <element signature="e#0#19#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/django_test/django_test/apps/users/serializers.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="296">
+          <caret line="23" column="39" selection-start-line="23" selection-start-column="26" selection-end-line="23" selection-end-column="39" />
+          <folding>
+            <element signature="e#0#38#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/django_test/django_test/settings/dev.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="414">
-          <caret line="45" column="35" selection-start-line="45" selection-start-column="35" selection-end-line="45" selection-end-column="35" />
+        <state relative-caret-position="53">
+          <caret line="150" column="20" selection-start-line="150" selection-start-column="20" selection-end-line="150" selection-end-column="20" />
           <folding>
             <element signature="e#0#310#1" />
             <element signature="e#312#321#0" expanded="true" />
@@ -526,52 +579,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$USER_HOME$/.virtualenvs/django2_test/lib/python3.6/site-packages/django/urls/conf.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="108">
-          <caret line="59" column="44" selection-start-line="59" selection-start-column="33" selection-end-line="59" selection-end-column="44" />
-          <folding>
-            <element signature="e#307#2190#0" />
-            <element signature="e#362#983#0" />
-            <element signature="e#496#983#0" />
-            <element signature="e#526#694#0" />
-            <element signature="e#574#676#0" />
-            <element signature="e#751#958#0" />
-            <element signature="e#1002#1085#0" />
-            <element signature="e#1356#1660#0" />
-            <element signature="e#1396#1649#0" />
-            <element signature="e#1703#1771#0" />
-            <element signature="e#1853#2141#0" />
-            <element signature="e#1894#2141#0" />
-            <element signature="e#2015#2141#0" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/django_test/django_test/apps/users/serializers.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="296">
-          <caret line="23" column="39" selection-start-line="23" selection-start-column="26" selection-end-line="23" selection-end-column="39" />
-          <folding>
-            <element signature="e#0#38#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/django_test/django_test/apps/users/urls.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="216">
-          <caret line="8" column="38" selection-start-line="8" selection-start-column="38" selection-end-line="8" selection-end-column="38" />
-          <folding>
-            <element signature="e#0#19#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/django_test/django_test/apps/users/views.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="404">
-          <caret line="38" selection-start-line="38" selection-end-line="38" />
+        <state relative-caret-position="431">
+          <caret line="40" column="26" selection-start-line="40" selection-start-column="26" selection-end-line="40" selection-end-column="26" />
           <folding>
             <element signature="e#0#35#0" expanded="true" />
           </folding>
