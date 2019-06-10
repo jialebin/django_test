@@ -16,7 +16,7 @@ class CreateUserSerializer(serializers.ModelSerializer):
         fields = ('username', 'password', 'mobile', 'email', 'password2', 'allow', 'token')
 
     def validate_allow(self, value):
-        if value != 'true':
+        if value != True:
             raise serializers.ValidationError('未同意协议')
         return value
 

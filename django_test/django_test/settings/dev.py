@@ -14,6 +14,8 @@ import os
 import sys
 import sys
 # Build paths inside the project like this: os.path.join(BASE_DIR, ...)
+import datetime
+
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 sys.path.insert(0, os.path.join(BASE_DIR, 'apps'))
 
@@ -39,7 +41,9 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
 
-    'users.apps.UsersConfig'
+    'rest_framework',  # 添加rest_framework
+
+    'users.apps.UsersConfig',  # 用户
 ]
 
 MIDDLEWARE = [
@@ -138,3 +142,20 @@ USE_TZ = True
 STATIC_URL = '/static/'
 
 AUTH_USER_MODEL = 'users.User'
+
+# 添加认证
+# REST_FRAMEWORK = {
+#     'DEFAULT_AUTHENTICATION_CLASSES': (
+#         'rest_framework_jwt.authentication.JSONWebTokenAuthentication',
+#         'rest_framework.authentication.SessionAuthentication',
+#         'rest_framework.authentication.BasicAuthentication',
+#         ),
+# }
+
+
+# JWT_AUTH = {
+#     # 指明token的有效期
+#     'JWT_EXPIRATION_DELTA': datetime.timedelta(days=1),
+#     # 自定义token返回字段
+#     'JWT_RESPONSE_PAYLOAD_HANDLER': 'users.utils.jwt_response_payload_handler',
+# }
