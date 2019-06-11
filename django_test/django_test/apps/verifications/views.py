@@ -1,7 +1,9 @@
 from django.http import HttpResponse
 from django.shortcuts import render
+from rest_framework import serializers
 from rest_framework.views import APIView
 from django_redis import get_redis_connection
+from rest_framework.response import Response
 
 from . import constants
 from django_test.libs.captcha import captcha
@@ -24,4 +26,13 @@ class ImageCodeView(APIView):
         return response
 
     def post(self, request):
-        pass
+        data = request.data
+        image_code_id = data['image_code_id']
+        image_code_text = data['image_code_id']
+
+        redis_conn = get_redis_connection("verify_codes")
+        image_server_code = redis_conn.get('img_%s' % image_code_id)
+        if image_server_code is None:
+            raise serializers.ValidationError('验证码过期')
+        if image_server_code.encode() == image_code_text:
+            return Response({'massage': 'OK'})
