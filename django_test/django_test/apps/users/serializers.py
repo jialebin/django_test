@@ -53,6 +53,8 @@ class CreateUserSerializer(serializers.ModelSerializer):
     def create(self, validated_data):
         del validated_data['password2']
         del validated_data['allow']
+        del validated_data['image_code_text']
+        del validated_data['image_code_id']
 
         user = super().create(validated_data)
 
