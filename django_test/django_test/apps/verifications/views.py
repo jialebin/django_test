@@ -22,3 +22,6 @@ class ImageCodeView(APIView):
         response = HttpResponse(image, content_type='image/jpg')
         response['text'] = text
         return response
+
+    def post(self, request):
+        pass
