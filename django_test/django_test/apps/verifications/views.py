@@ -31,7 +31,10 @@ class ImageCodeView(APIView):
         image_code_text = data['image_code_id']
 
         redis_conn = get_redis_connection("verify_codes")
-        image_server_code = redis_conn.get('img_%s' % image_code_id)
+        try:
+            image_server_code = redis_conn.get('img_%s' % image_code_id)
+        except Exception as e:
+            raise serializers.ValidationError('请重试')
         if image_server_code is None:
             raise serializers.ValidationError('验证码过期')
         if image_server_code.encode() == image_code_text:
