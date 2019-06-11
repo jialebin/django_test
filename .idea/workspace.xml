@@ -2,8 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="1b1722f0-9231-40e3-aa9b-c6b229f419bc" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/django_test/django_test/libs/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/django2_test.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/django2_test.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/django_test/django_test/apps/verifications/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/django_test/django_test/apps/verifications/views.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/django_test/django_test/settings/dev.py" beforeDir="false" afterPath="$PROJECT_DIR$/django_test/django_test/settings/dev.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -16,38 +19,51 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/django_test/django_test/settings/dev.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="5103">
-              <caret line="210" column="45" selection-start-line="210" selection-start-column="45" selection-end-line="210" selection-end-column="45" />
+            <state relative-caret-position="508">
+              <caret line="227" column="10" selection-start-line="227" selection-start-column="10" selection-end-line="227" selection-end-column="10" />
               <folding>
                 <element signature="e#0#310#1" />
+                <element signature="e#556#618#0" />
+                <element signature="e#970#1239#0" />
+                <element signature="e#1254#1653#0" />
+                <element signature="e#1702#2173#0" />
+                <element signature="e#1708#2170#0" />
+                <element signature="e#1845#2163#0" />
+                <element signature="e#1881#2152#0" />
+                <element signature="e#2227#2237#0" />
+                <element signature="e#2468#2677#0" />
+                <element signature="e#2485#2675#0" />
+                <element signature="e#2680#2701#0" />
+                <element signature="e#2809#3205#0" />
+                <element signature="e#2815#2914#0" />
+                <element signature="e#2920#3009#0" />
+                <element signature="e#3015#3105#0" />
+                <element signature="e#3111#3202#0" />
+                <element signature="e#3208#3230#0" />
+                <element signature="e#3342#3367#0" />
+                <element signature="e#3440#3480#0" />
+                <element signature="e#3623#3873#0" />
+                <element signature="e#3673#3860#0" />
+                <element signature="e#3887#4063#0" />
+                <element signature="e#4075#6011#0" />
+                <element signature="e#4152#4434#0" />
+                <element signature="e#4173#4323#0" />
+                <element signature="e#4343#4427#0" />
+                <element signature="e#4451#4705#0" />
                 <element signature="e#4465#4479#0" />
+                <element signature="e#4620#4694#0" />
+                <element signature="e#4723#5484#0" />
+                <element signature="e#4744#4911#0" />
                 <element signature="e#4921#4939#0" />
+                <element signature="e#5099#5477#0" />
+                <element signature="e#5501#6009#0" />
+                <element signature="e#5521#5685#0" />
+                <element signature="e#5695#5716#0" />
+                <element signature="e#6040#6048#0" />
+                <element signature="e#7083#7159#0" />
               </folding>
             </state>
           </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/django_test/logs/log.log">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="108">
-              <caret line="4" lean-forward="true" selection-start-line="4" selection-end-line="4" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/.gitignore">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="162">
-              <caret line="6" selection-start-line="6" selection-end-line="6" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/django_test/logs/.gitkeep">
-          <provider selected="true" editor-type-id="text-editor" />
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
@@ -107,7 +123,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$USER_HOME$/.virtualenvs/django2_test/lib/python3.6/site-packages/django/urls/conf.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="270">
+            <state relative-caret-position="230">
               <caret line="59" column="44" selection-start-line="59" selection-start-column="33" selection-end-line="59" selection-end-column="44" />
               <folding>
                 <element signature="e#307#2190#0" />
@@ -124,6 +140,32 @@
                 <element signature="e#1894#2141#0" />
                 <element signature="e#2015#2141#0" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/django_test/django_test/apps/verifications/views.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="513">
+              <caret line="20" column="23" selection-start-line="20" selection-start-column="23" selection-end-line="20" selection-end-column="23" />
+              <folding>
+                <element signature="e#0#36#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/django_test/django_test/apps/verifications/constants.py">
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/django_test/django_test/libs/captcha/captcha.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="270">
+              <caret line="10" column="21" selection-start-line="10" selection-start-column="21" selection-end-line="10" selection-end-column="21" />
             </state>
           </provider>
         </entry>
@@ -146,6 +188,7 @@
       <find>mail_admins</find>
       <find>filters</find>
       <find>logs</find>
+      <find>.xml</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -165,9 +208,13 @@
         <option value="$PROJECT_DIR$/django_test/django_test/apps/users/serializers.py" />
         <option value="$PROJECT_DIR$/django_test/django_test/apps/users/urls.py" />
         <option value="$PROJECT_DIR$/django_test/django_test/apps/users/views.py" />
-        <option value="$PROJECT_DIR$/django_test/django_test/settings/dev.py" />
+        <option value="$PROJECT_DIR$/django_test/logs/.gitkeep" />
         <option value="$PROJECT_DIR$/.gitignore" />
         <option value="$PROJECT_DIR$/django_test/logs/log.log" />
+        <option value="$PROJECT_DIR$/django_test/django_test/libs/captcha/captcha.py" />
+        <option value="$PROJECT_DIR$/django_test/django_test/settings/dev.py" />
+        <option value="$PROJECT_DIR$/django_test/django_test/apps/verifications/views.py" />
+        <option value="$PROJECT_DIR$/django_test/django_test/apps/verifications/constants.py" />
       </list>
     </option>
   </component>
@@ -182,7 +229,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -199,18 +245,41 @@
               <item name="django2_test" type="b2602c69:ProjectViewProjectNode" />
               <item name="django2_test" type="462c0819:PsiDirectoryNode" />
               <item name="django_test" type="462c0819:PsiDirectoryNode" />
-              <item name="logs" type="462c0819:PsiDirectoryNode" />
+              <item name="django_test" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="django2_test" type="b2602c69:ProjectViewProjectNode" />
+              <item name="django2_test" type="462c0819:PsiDirectoryNode" />
+              <item name="django_test" type="462c0819:PsiDirectoryNode" />
+              <item name="django_test" type="462c0819:PsiDirectoryNode" />
+              <item name="apps" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="django2_test" type="b2602c69:ProjectViewProjectNode" />
+              <item name="django2_test" type="462c0819:PsiDirectoryNode" />
+              <item name="django_test" type="462c0819:PsiDirectoryNode" />
+              <item name="django_test" type="462c0819:PsiDirectoryNode" />
+              <item name="apps" type="462c0819:PsiDirectoryNode" />
+              <item name="verifications" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="django2_test" type="b2602c69:ProjectViewProjectNode" />
+              <item name="django2_test" type="462c0819:PsiDirectoryNode" />
+              <item name="django_test" type="462c0819:PsiDirectoryNode" />
+              <item name="django_test" type="462c0819:PsiDirectoryNode" />
+              <item name="settings" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$USER_HOME$/work/hfyt666" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
@@ -278,23 +347,26 @@
       <workItem from="1559800252244" duration="3602000" />
       <workItem from="1559809426021" duration="4467000" />
       <workItem from="1560126425522" duration="16774000" />
-      <workItem from="1560156257984" duration="1185000" />
+      <workItem from="1560156257984" duration="2555000" />
+      <workItem from="1560215254020" duration="970000" />
+      <workItem from="1560219305192" duration="729000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="26028000" />
+    <option name="totallyTimeSpent" value="29097000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="67" y="25" width="1853" height="1055" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.25985563" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.2665186" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
       <window_info anchor="bottom" id="Run" order="2" weight="0.32930845" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.39956093" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.38419318" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
@@ -302,7 +374,7 @@
       <window_info anchor="bottom" id="Version Control" order="8" />
       <window_info anchor="bottom" id="Database Changes" order="9" />
       <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="11" visible="true" weight="0.6158068" />
+      <window_info anchor="bottom" id="Terminal" order="11" visible="true" weight="0.19648738" />
       <window_info anchor="bottom" id="Python Console" order="12" weight="0.32930845" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -326,7 +398,7 @@
     </breakpoint-manager>
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
-    <SUITE FILE_PATH="coverage/django2_test$manage.coverage" NAME="manage Coverage Results" MODIFIED="1560153217758" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/django_test" />
+    <SUITE FILE_PATH="coverage/django2_test$manage.coverage" NAME="manage Coverage Results" MODIFIED="1560158740896" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/django_test" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/django_test/manage.py">
@@ -466,15 +538,17 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/django_test/.gitignore" />
-    <entry file="file://$PROJECT_DIR$/django_test/django_test/settings/dev.py">
+    <entry file="file://$PROJECT_DIR$/django_test/logs/log.log">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="5103">
-          <caret line="210" column="45" selection-start-line="210" selection-start-column="45" selection-end-line="210" selection-end-column="45" />
-          <folding>
-            <element signature="e#0#310#1" />
-            <element signature="e#4465#4479#0" />
-            <element signature="e#4921#4939#0" />
-          </folding>
+        <state relative-caret-position="108">
+          <caret line="4" lean-forward="true" selection-start-line="4" selection-end-line="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.gitignore">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1269">
+          <caret line="47" column="12" selection-start-line="47" selection-start-column="8" selection-end-line="47" selection-end-column="12" />
         </state>
       </provider>
     </entry>
@@ -527,7 +601,7 @@
     </entry>
     <entry file="file://$USER_HOME$/.virtualenvs/django2_test/lib/python3.6/site-packages/django/urls/conf.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="270">
+        <state relative-caret-position="230">
           <caret line="59" column="44" selection-start-line="59" selection-start-column="33" selection-end-line="59" selection-end-column="44" />
           <folding>
             <element signature="e#307#2190#0" />
@@ -547,19 +621,73 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/.gitignore">
+    <entry file="file://$PROJECT_DIR$/django_test/django_test/libs/captcha/captcha.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="162">
-          <caret line="6" selection-start-line="6" selection-end-line="6" />
+        <state relative-caret-position="270">
+          <caret line="10" column="21" selection-start-line="10" selection-start-column="21" selection-end-line="10" selection-end-column="21" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/django_test/logs/log.log">
+    <entry file="file://$PROJECT_DIR$/django_test/django_test/settings/dev.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="108">
-          <caret line="4" lean-forward="true" selection-start-line="4" selection-end-line="4" />
+        <state relative-caret-position="508">
+          <caret line="227" column="10" selection-start-line="227" selection-start-column="10" selection-end-line="227" selection-end-column="10" />
+          <folding>
+            <element signature="e#0#310#1" />
+            <element signature="e#556#618#0" />
+            <element signature="e#970#1239#0" />
+            <element signature="e#1254#1653#0" />
+            <element signature="e#1702#2173#0" />
+            <element signature="e#1708#2170#0" />
+            <element signature="e#1845#2163#0" />
+            <element signature="e#1881#2152#0" />
+            <element signature="e#2227#2237#0" />
+            <element signature="e#2468#2677#0" />
+            <element signature="e#2485#2675#0" />
+            <element signature="e#2680#2701#0" />
+            <element signature="e#2809#3205#0" />
+            <element signature="e#2815#2914#0" />
+            <element signature="e#2920#3009#0" />
+            <element signature="e#3015#3105#0" />
+            <element signature="e#3111#3202#0" />
+            <element signature="e#3208#3230#0" />
+            <element signature="e#3342#3367#0" />
+            <element signature="e#3440#3480#0" />
+            <element signature="e#3623#3873#0" />
+            <element signature="e#3673#3860#0" />
+            <element signature="e#3887#4063#0" />
+            <element signature="e#4075#6011#0" />
+            <element signature="e#4152#4434#0" />
+            <element signature="e#4173#4323#0" />
+            <element signature="e#4343#4427#0" />
+            <element signature="e#4451#4705#0" />
+            <element signature="e#4465#4479#0" />
+            <element signature="e#4620#4694#0" />
+            <element signature="e#4723#5484#0" />
+            <element signature="e#4744#4911#0" />
+            <element signature="e#4921#4939#0" />
+            <element signature="e#5099#5477#0" />
+            <element signature="e#5501#6009#0" />
+            <element signature="e#5521#5685#0" />
+            <element signature="e#5695#5716#0" />
+            <element signature="e#6040#6048#0" />
+            <element signature="e#7083#7159#0" />
+          </folding>
         </state>
       </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/django_test/django_test/apps/verifications/views.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="513">
+          <caret line="20" column="23" selection-start-line="20" selection-start-column="23" selection-end-line="20" selection-end-column="23" />
+          <folding>
+            <element signature="e#0#36#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/django_test/django_test/apps/verifications/constants.py">
+      <provider selected="true" editor-type-id="text-editor" />
     </entry>
   </component>
 </project>
