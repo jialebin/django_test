@@ -8,4 +8,3 @@ urlpatterns = [
     re_path(r'^count/username/(?P<username>\w+)/$', views.CountUserName.as_view()),
     re_path(r'^count/mobile/(?P<mobile>1[3-9]\d{9})/$', views.CountUserMobile.as_view()),
 ]
-print(urlpatterns)
