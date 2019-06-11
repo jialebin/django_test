@@ -5,6 +5,9 @@ from rest_framework_jwt.settings import api_settings
 
 from .models import User
 
+import logging
+logger = logging.getLogger('django')
+
 
 class CreateUserSerializer(serializers.ModelSerializer):
 
@@ -47,7 +50,10 @@ class CreateUserSerializer(serializers.ModelSerializer):
             raise serializers.ValidationError('验证码过期')
         if image_server_code.decode() != image_code_text.upper():
             raise serializers.ValidationError('验证码错误')
-
+        try:
+            redis_conn.delete('img_%s' % image_code_id)
+        except Exception as e:
+            logger.error(e)
         return attrs
 
     def create(self, validated_data):
