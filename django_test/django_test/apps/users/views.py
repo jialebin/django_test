@@ -6,11 +6,12 @@ from rest_framework.generics import CreateAPIView
 from rest_framework.response import Response
 import random
 import string
-
+from django_redis import get_redis_connection
 
 from .serializers import CreateUserSerializer
 from .models import User
 from celery_tasks.emali.tasks import send_verify_email
+from . import constants
 # from django_test.libs.captcha.captcha import captcha
 
 import logging
@@ -70,6 +71,9 @@ class LogInByEmailView(APIView):
         verify_str = ''.join(random.sample(string.ascii_uppercase + string.digits, 6))
         # text, image = captcha.generate_captcha()  # 生成带图片的
         # send_verify_email('jlb1024@163.com', image)
+        # 保存到ｒｅｄｉｓ
+        redis_conn = get_redis_connection('verify_codes')
+        redis_conn.set('login_email_%s' % email, verify_str, constants.IMAGE_CODE_REDIS_EXPIRES)
         send_verify_email(email, verify_str)
         return Response({'massage': 'OK'})
 
