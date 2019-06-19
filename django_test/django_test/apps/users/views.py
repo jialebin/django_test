@@ -13,6 +13,9 @@ from .models import User
 from celery_tasks.emali.tasks import send_verify_email
 # from django_test.libs.captcha.captcha import captcha
 
+import logging
+logger = logging.getLogger('django')
+
 
 def hello(request):
     return HttpResponse('Hello world')
@@ -57,7 +60,13 @@ class LogInByEmailView(APIView):
         :param request:
         :return:
         """
-
+        try:
+            user = User.objects.get(email=email)
+        except User.DeosNotExist:
+            return Response({'massage': '该邮箱不存在'})
+        except Exception as e:
+            logger.info(e)
+            return Response({'massage': '该邮箱不存在'})
         verify_str = ''.join(random.sample(string.ascii_uppercase + string.digits, 6))
         # text, image = captcha.generate_captcha()  # 生成带图片的
         # send_verify_email('jlb1024@163.com', image)
