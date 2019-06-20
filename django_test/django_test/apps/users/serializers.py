@@ -77,4 +77,19 @@ class CreateUserSerializer(serializers.ModelSerializer):
         return user
 
 
-a = ""
+class LogInByEmailSerializer(serializers.Serializer):
+    email = serializers.EmailField()
+    verify = serializers.CharField(max_length=6)
+
+    def validate(self, attrs):
+        verify = attrs['verify']
+        email = attrs['email']
+
+        redis_conn = get_redis_connection('verify_codes')
+
+        redis_verify = redis_conn.get('login_email_%s' % email)
+        if redis_verify is None:
+            raise serializers.ValidationError('邮箱错误')
+        elif redis_verify.encode() == verify.upper():
+            raise serializers.ValidationError('验证码错误')
+        return attrs

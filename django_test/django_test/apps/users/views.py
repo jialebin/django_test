@@ -8,7 +8,7 @@ import random
 import string
 from django_redis import get_redis_connection
 
-from .serializers import CreateUserSerializer
+from .serializers import CreateUserSerializer, LogInByEmailSerializer
 from .models import User
 from celery_tasks.emali.tasks import send_verify_email
 from . import constants
@@ -51,7 +51,7 @@ class CountUserMobile(APIView):
     pass
 
 
-class LogInByEmailView(APIView):
+class LogInSendEmailView(APIView):
     """
     邮箱登录
     """
@@ -77,13 +77,18 @@ class LogInByEmailView(APIView):
         send_verify_email(email, verify_str)
         return Response({'massage': 'OK'})
 
+    pass
+
+
+class LogInByEmaiiew(APIView):
+
     def post(self, request):
         """
 
         :param request:
         :return:
         """
+        data = request.data
+
+        return Response(data)
         pass
-
-
-    pass
