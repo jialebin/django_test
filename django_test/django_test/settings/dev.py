@@ -262,14 +262,14 @@ CACHES = {
         }
     }
 }
-#邮箱配置
+# 邮箱配置
 EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
 EMAIL_HOST = 'smtp.163.com'
 EMAIL_PORT = 25
-#发送邮件的邮箱
+# 发送邮件的邮箱
 EMAIL_HOST_USER = 'jlb1024@163.com'
-#在邮箱中设置的客户端授权密码
+# 在邮箱中设置的客户端授权密码
 EMAIL_HOST_PASSWORD = 'jlb1024'
-#收件人看到的发件人
+# 收件人看到的发件人
 EMAIL_FROM = '嘿嘿<jlb1024@163.com>'
 

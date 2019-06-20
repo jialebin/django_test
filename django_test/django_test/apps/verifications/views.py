@@ -9,6 +9,9 @@ from . import constants
 from django_test.libs.captcha.captcha import captcha
 # Create your views here.
 
+import logging
+logger = logging.getLogger('django')
+
 
 class GetImageCodeView(APIView):
     """
@@ -23,6 +26,7 @@ class GetImageCodeView(APIView):
 
         response = HttpResponse(image, content_type='image/jpg')
         response['text'] = text
+        logger.info(text)
         return response
 
 

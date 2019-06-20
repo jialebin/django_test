@@ -85,7 +85,7 @@ class LogInByEmaiiew(APIView):
 
     def post(self, request):
         """
-
+        通过邮箱验证登录
         :param request:
         :return:
         """
