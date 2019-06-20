@@ -7,6 +7,7 @@ from rest_framework.response import Response
 import random
 import string
 from django_redis import get_redis_connection
+from rest_framework_jwt.settings import api_settings
 
 from .serializers import CreateUserSerializer, LogInByEmailSerializer
 from .models import User
@@ -63,12 +64,12 @@ class LogInSendEmailView(APIView):
         """
         try:
             user = User.objects.get(email=email)
-        except User.DeosNotExist:
+        except User.DoesNotExist:
             return Response({'massage': '该邮箱不存在'})
         except Exception as e:
             logger.info(e)
             return Response({'massage': '该邮箱不存在'})
-        verify_str = ''.join(random.sample(string.ascii_uppercase + string.digits, 6))
+        verify_str = ''.join(random.sample(string.ascii_uppercase, 6))
         # text, image = captcha.generate_captcha()  # 生成带图片的
         # send_verify_email('jlb1024@163.com', image)
         # 保存到ｒｅｄｉｓ
@@ -89,6 +90,20 @@ class LogInByEmaiiew(APIView):
         :return:
         """
         data = request.data
+        serializer = LogInByEmailSerializer(data=data)
+        serializer.is_valid(raise_exception=True)
+        valid_data = serializer.data
+        user = User.objects.get(email=valid_data['email'])
+        # 获取token
+        jwt_payload_handler = api_settings.JWT_PAYLOAD_HANDLER
+        jwt_encode_handler = api_settings.JWT_ENCODE_HANDLER
+        payload = jwt_payload_handler(user)
+        token = jwt_encode_handler(payload)
 
-        return Response(data)
-        pass
+        response = Response({
+            'token': token,
+            'user_id': user.id,
+            'username': user.username
+        })
+
+        return response

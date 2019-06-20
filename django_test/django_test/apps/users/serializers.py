@@ -90,6 +90,6 @@ class LogInByEmailSerializer(serializers.Serializer):
         redis_verify = redis_conn.get('login_email_%s' % email)
         if redis_verify is None:
             raise serializers.ValidationError('邮箱错误')
-        elif redis_verify.encode() == verify.upper():
+        elif redis_verify.decode() != verify.upper():
             raise serializers.ValidationError('验证码错误')
         return attrs
