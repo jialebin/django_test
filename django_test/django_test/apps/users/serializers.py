@@ -3,7 +3,9 @@ from rest_framework import serializers
 import re
 from rest_framework_jwt.settings import api_settings
 
+
 from .models import User
+from celery_tasks.emali.tasks import send_activation_email
 
 import logging
 logger = logging.getLogger('django')
@@ -44,6 +46,7 @@ class CreateUserSerializer(serializers.ModelSerializer):
 
         user.token = token
 
+        send_activation_email(validated_data['email'], token)
         return user
 
 

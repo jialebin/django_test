@@ -51,7 +51,24 @@ def send_verify_email(to_email, verify_str):
     html_message = '<p>尊敬的用户您好！</p>' \
                    '<p>感谢您使用</p>' \
                    '<p>您的登录验证码是</p>' \
-                   '<p>%s<a></p>' % (verify_str,)
+                   '<p>%s</p>' % (verify_str,)
 
-    if send_mail(subject, "", settings.EMAIL_FROM, [to_email], html_message=html_message):
-        print('111')
+    send_mail(subject, "", settings.EMAIL_FROM, [to_email], html_message=html_message)
+
+
+@celery_app.task(name='send_verify_email')
+def send_activation_email(to_email, verify_url):
+    '''
+    发送验证邮箱邮件
+    :param to_email: 收件人邮箱
+    :param verify_url: 验证链接
+    :return: None
+    '''
+
+    subject = '***用户激活邮箱'
+    html_message = '<p>尊敬的用户您好！</p>' \
+                   '<p>感谢您××××。</p>' \
+                   '<p>点击一下链接进行激活</p>' \
+                   '<p><a href="%s">%s<a></p>' % (verify_url, verify_url)
+
+    send_mail(subject, "", settings.EMAIL_FROM, [to_email], html_message=html_message)

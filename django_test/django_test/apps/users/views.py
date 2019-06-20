@@ -12,7 +12,7 @@ from rest_framework_jwt.settings import api_settings
 from .serializers import CreateUserSerializer, LogInByEmailSerializer
 from .models import User
 from celery_tasks.emali.tasks import send_verify_email
-from . import constants
+from . import contants
 # from django_test.libs.captcha.captcha import captcha
 
 import logging
@@ -74,7 +74,7 @@ class LogInSendEmailView(APIView):
         # send_verify_email('jlb1024@163.com', image)
         # 保存到ｒｅｄｉｓ
         redis_conn = get_redis_connection('verify_codes')
-        redis_conn.set('login_email_%s' % email, verify_str, constants.IMAGE_CODE_REDIS_EXPIRES)
+        redis_conn.set('login_email_%s' % email, verify_str, contants.IMAGE_CODE_REDIS_EXPIRES)
         send_verify_email(email, verify_str)
         return Response({'massage': 'OK'})
 

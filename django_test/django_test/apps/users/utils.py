@@ -1,4 +1,4 @@
-from .constants import expires_at
+from .contants import expires_at
 
 
 def jwt_response_payload_handler(token, user=None, request=None):
