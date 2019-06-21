@@ -103,7 +103,34 @@ class LogInByEmaiiew(APIView):
         response = Response({
             'token': token,
             'user_id': user.id,
-            'username': user.username
+            'username': user.username,
+            'email': user.email,
         })
 
         return response
+
+
+class ActivationUserByEmailView(APIView):
+
+    def get(self, request):
+        try:
+            token = request.data['token']
+        except KeyError:
+            return Response({'massage': '缺少认证信息'})
+        user = User.check_activation_email_token(token)
+        if not user:
+            return Response({'massage': '认证信息错误'})
+        user.email_active = True
+        user.save()
+
+        jwt_payload_handler = api_settings.JWT_PAYLOAD_HANDLER
+        jwt_encode_handler = api_settings.JWT_ENCODE_HANDLER
+        payload = jwt_payload_handler(user)
+        token = jwt_encode_handler(payload)
+        response_dict = {
+            'user_id': user.id,
+            'username': user.username,
+            'email': user.email,
+            'token': token,
+        }
+        return Response(response_dict)

@@ -20,10 +20,30 @@ class User(AbstractUser):
         verbose_name = '用户'
         verbose_name_plural = verbose_name
 
-    def generate_verify_email_url(self):
-        #生成验证邮箱的url
+    def generate_activation_email_url(self):
+        # 生成验证邮箱的激活url
         serializer = Serializers(settings.SECRET_KEY,expires_in=contants.VERIFY_EMAIL_TOKEN_EXPIRES)
-        data = {'user_id':self.id,'email':self.email}
+        data = {'user_id': self.id, 'email': self.email}
         token = serializer.dumps(data).decode()
-        verify_url = 'http://www.hfyt365.com:8080/success_verify_email.html?token=' + token
+        verify_url = 'http://www.lovelogging.com/email_activation.html?token=' + token
         return verify_url
+
+    @staticmethod
+    def check_activation_email_token(token):
+        '''检查验证邮件的token'''
+
+        serializer = Serializers(settings.SECRET_KEY, expires_in=contants.VERIFY_EMAIL_TOKEN_EXPIRES)
+
+        try:
+            data = serializer.loads(token)
+        except BadData:
+            return None
+        else:
+            email = data.get('email')
+            user_id = data.get('user_id')
+            try:
+                user = User.objects.get(id=user_id, email=email)
+            except User.DoesNotExist:
+                return None
+            else:
+                return user

@@ -15,13 +15,12 @@ class CreateUserSerializer(serializers.ModelSerializer):
 
     # password2 = serializers.CharField(label='确认密码', write_only=True)
     allow = serializers.BooleanField(label="同意协议", write_only=True)
-    token = serializers.CharField(label='token', read_only=True)
     # image_code_text = serializers.CharField(label='图片验证码value', read_only=True)
     # image_code_id = serializers.CharField(label='图片验证码key', read_only=True)
 
     class Meta:
         model = User
-        fields = ('username', 'mobile', 'email', 'allow', 'token')
+        fields = ('username', 'mobile', 'email', 'allow')
 
     def validate_allow(self, value):
         if value != True:
@@ -39,14 +38,8 @@ class CreateUserSerializer(serializers.ModelSerializer):
 
         user = super().create(validated_data)
 
-        jwt_payload_handler = api_settings.JWT_PAYLOAD_HANDLER
-        jwt_encode_handler = api_settings.JWT_ENCODE_HANDLER
-        payload = jwt_payload_handler(user)
-        token = jwt_encode_handler(payload)
-
-        user.token = token
-
-        send_activation_email(validated_data['email'], token)
+        activation_url = user.generate_activation_email_url()
+        send_activation_email(validated_data['email'], activation_url)
         return user
 
 
