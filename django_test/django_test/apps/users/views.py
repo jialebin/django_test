@@ -75,10 +75,8 @@ class LogInSendEmailView(APIView):
         # 保存到ｒｅｄｉｓ
         redis_conn = get_redis_connection('verify_codes')
         redis_conn.set('login_email_%s' % email, verify_str, contants.IMAGE_CODE_REDIS_EXPIRES)
-        send_verify_email(email, verify_str)
+        send_verify_email.delay(email, verify_str)
         return Response({'massage': 'OK'})
-
-    pass
 
 
 class LogInByEmaiiew(APIView):
@@ -111,7 +109,9 @@ class LogInByEmaiiew(APIView):
 
 
 class ActivationUserByEmailView(APIView):
-
+    """
+    邮箱激活链接的认证
+    """
     def get(self, request):
         try:
             token = request.data['token']
@@ -127,6 +127,7 @@ class ActivationUserByEmailView(APIView):
         jwt_encode_handler = api_settings.JWT_ENCODE_HANDLER
         payload = jwt_payload_handler(user)
         token = jwt_encode_handler(payload)
+
         response_dict = {
             'user_id': user.id,
             'username': user.username,

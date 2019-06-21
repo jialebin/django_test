@@ -1,12 +1,14 @@
 from django.http import HttpResponse
-from django.shortcuts import render
 from rest_framework import serializers
 from rest_framework.views import APIView
 from django_redis import get_redis_connection
 from rest_framework.response import Response
+from rest_framework import status
+import random
 
 from . import constants
 from django_test.libs.captcha.captcha import captcha
+from celery_tasks.sms.tasks import send_verify_sms
 # Create your views here.
 
 import logging
@@ -50,3 +52,20 @@ class VerifyImageCodeView(APIView):
             return Response({'massage': 'OK'})
         else:
             return Response({'massage': '验证码错误'})
+
+
+class SendVerifySMSView(APIView):
+    def get(self, request, mobile):
+
+        redis_conn = get_redis_connection('verify_codes')
+        send_flag = redis_conn.get('send_flag_%s' % mobile)
+        if send_flag:
+            return Response({'massage': '频繁发送'}, status=status.HTTP_400_BAD_REQUEST)
+        sms_code = '%06d' % random.randint(0, 999999)
+        logger.info(sms_code)
+        send_verify_sms.delay(mobile, sms_code)
+        pl = redis_conn.pipeline()
+        pl.setex('sms_%s' % mobile, constants.SMS_CODE_REDIS_EXPIRES, sms_code)
+        pl.setex('send_flag_%s' % mobile, constants.SEND_SMS_CODE_INTERVAL, 1)
+        pl.execute()
+        return Response({'massage': 'ok'})

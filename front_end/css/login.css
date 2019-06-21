@@ -1,0 +1,24 @@
+#login_form{
+    position: absolute;
+    /*postion:relative;*/
+    width: 30%;
+    left: 60%;
+    top: 30%;
+}
+
+#login_form .email{
+    width: 80%;
+    height: 30%;
+}
+
+#login_form .verification_code{
+    width: 80%;
+    height: 30%;
+}
+
+#email_error, #verification_code_error{
+    display: none;
+    /*display: block;*/
+    /*width: 20px;*/
+    /*height: 100px;*/
+}
