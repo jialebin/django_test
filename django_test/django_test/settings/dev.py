@@ -276,3 +276,11 @@ EMAIL_HOST_PASSWORD = 'jlb1024'
 # 收件人看到的发件人
 EMAIL_FROM = '嘿嘿<jlb1024@163.com>'
 
+
+# QQ登录参数
+QQ_CLIENT_ID = '101499575'
+QQ_CLIENT_SECRET = 'b479cd60d30d61ff4a86baad5a4a52a8'
+QQ_REDIRECT_URI = 'http://www.hfyt365.site:8080/oauth_callback.html'
+QQ_STATE = '/'
+
+DEFAULT_FILE_STORAGE = ''

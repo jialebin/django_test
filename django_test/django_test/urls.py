@@ -25,32 +25,48 @@ urlpatterns = [
 ]
 
 
-def get_all_url(urlparrentens, parent_regex='', is_firt_time=False, url_list=[]):
-    if isinstance(urlparrentens, URLPattern):
-        regex = urlparrentens._regex.strip('^$')
-        url_list.append(((parent_regex + regex), urlparrentens.name))
-        return
+pass
 
-    if isinstance(urlparrentens, URLResolver):
-        regex = urlparrentens._regex.strip('^$')
-        if urlparrentens._regex.strip('^$') == 'xadmin/':
-            url_list.append((urlparrentens._regex.strip('^$'), 'xadmin'))
-        else:
-            get_all_url(urlparrentens.url_patterns, parent_regex + regex, url_list=url_list)
-        return
 
-    for item in urlparrentens:
-        if isinstance(urlparrentens, URLResolver):
-            regex = item._regex.strip('^$')
-            get_all_url(item, parent_regex + regex, url_list=url_list)
+# def get_all_uel2(urlpatterns, parent_regex=''):
+#     if isinstance(urlpatterns, list):
+#         for url_pattern in urlpatterns:
+#             get_all_uel2(url_pattern)
+#
+#     if isinstance(urlpatterns, URLPattern):
+#         # 父级路由
+#         for url_pattern in urlpatterns.url_patterns:
+#             get_all_uel2(url_pattern, urlpatterns.pattern.regex.pttern)
+#
+#     pass
 
-        elif isinstance(urlparrentens, list):
-            get_all_url(item, parent_regex, url_list=url_list)
 
-        # else:
-        #     url_list.append(((parent_regex+item._regex),  item.name))
-    return url_list
-    pass
+# def get_all_url(urlparrentens, parent_regex='', is_firt_time=False, url_list=[]):
+#     if isinstance(urlparrentens, URLPattern):  # 子路由
+#         regex = urlparrentens._regex.strip('^$')
+#         url_list.append(((parent_regex + regex), urlparrentens.name))
+#         return
+#
+#     if isinstance(urlparrentens, URLResolver):  # 父路由
+#         regex = urlparrentens._regex.strip('^$')
+#         if urlparrentens._regex.strip('^$') == 'xadmin/':
+#             url_list.append((urlparrentens._regex.strip('^$'), 'xadmin'))
+#         else:
+#             get_all_url(urlparrentens.url_patterns, parent_regex + regex, url_list=url_list)
+#         return
+#
+#     for item in urlparrentens:
+#         if isinstance(urlparrentens, URLResolver):
+#             regex = item._regex.strip('^$')
+#             get_all_url(item, parent_regex + regex, url_list=url_list)
+#
+#         elif isinstance(urlparrentens, list):
+#             get_all_url(item, parent_regex, url_list=url_list)
+#
+#         # else:
+#         #     url_list.append(((parent_regex+item._regex),  item.name))
+#     return url_list
+#     pass
 
 
 # url_list = get_all_url(urlpatterns, is_firt_time=True)

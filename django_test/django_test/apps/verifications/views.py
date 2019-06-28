@@ -55,8 +55,15 @@ class VerifyImageCodeView(APIView):
 
 
 class SendVerifySMSView(APIView):
+    """
+    发送短信验证码
+    """
     def get(self, request, mobile):
-
+        """
+        :param request:
+        :param mobile: 手机号
+        :return:
+        """
         redis_conn = get_redis_connection('verify_codes')
         send_flag = redis_conn.get('send_flag_%s' % mobile)
         if send_flag:
